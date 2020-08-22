@@ -92,7 +92,7 @@ def QRscan_compare(ma3):
 if __name__ == '__main__':
     while(1):
         ma3 = socket_server()
-        print("please input Y when robot arrives:")
+        print("please input Y when robot arrives:") #manually call navigation 
         arrive_flag = raw_input()
         QRscan_compare(ma3)
         raw_input()
