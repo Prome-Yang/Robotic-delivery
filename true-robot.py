@@ -52,7 +52,7 @@ def socket_server():
 def QRscan_compare(ma3):
     print('Waiting QRcode...')
     for i in range(5):
-        commands="raspistill -v -o "+str(i)+'.jpg'
+        commands="raspistill -v -o "+str(i)+'.jpg' #RoS command on caputring a photo
         os.system(commands)
         path=str(i)+'.jpg'
         flag,data=decode(path)
